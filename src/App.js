@@ -1,12 +1,30 @@
+// libraries
 import React from 'react';
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      Moja inżynierka
-    </div>
-  );
+
+// styles
+import './styles/app.css';
+import './styles/media.css';
+
+//pages
+import Home from './pages/Home';
+
+//components
+
+class App extends React.Component{
+  state = {
+
+  }
+
+  render(){
+    return(
+      <>
+        <Home/>
+      </>
+    )
+  }
 }
+
+
 
 export default App;
