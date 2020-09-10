@@ -3,3 +3,112 @@
   margin:0;
   box-sizing: border-box;
 }
+
+html{
+  font-family: 'Poppins', sans-serif;
+  font-size: 10px;
+}
+
+button{
+  cursor: pointer;
+}
+
+h1{
+  font-weight: 700;
+  font-size: 5rem;
+}
+
+p{
+  font-size: 2rem;
+}
+
+/*---------------------------------------------*/
+
+.wrap{
+  width:100%;
+  height: 100vh;
+  position:relative;
+}
+
+.photo-wrap{
+  position: absolute;
+  left:0;
+  top:50%;
+  transform: translateY(-50%);
+  z-index: -2;
+  mix-blend-mode: difference;
+}
+
+.back-dark {
+  position: absolute;
+  width:100%;
+  height: 100%;
+  top:0;
+  left:0;
+  background-color: rgba(0,0,0,.5);
+  /* z-index: -1; */
+}
+
+main nav{
+  width:100%;
+  min-height: 10px;
+  background-color: #199E05;
+  display: flex;
+  justify-content: space-between;
+}
+
+.portal-name{
+  font-size:3rem;
+  text-transform: uppercase;
+  color:white;
+  margin:10px 0 10px 100px;
+  font-weight: 500;
+}
+
+.sign-in{
+  font-size:2rem;
+  text-transform: uppercase;
+  padding:10px 25px;
+  margin:10px 100px 10px 0;
+  border-radius: 25px;
+  border:3px solid #9E006C;
+  background-color: #ffffff;
+  color:#9E006C;
+  font-weight: 500;
+  transition:.2s;
+}
+
+.sign-in:hover{
+  background-color: #9E006C;
+  color:#ffffff;
+}
+
+.welcome-text{
+  max-width: 600px;
+  margin:250px 250px 0 auto;
+  padding:25px;
+  border:3px solid #9E006C;
+  border-radius: 15px;
+  position: relative;
+  z-index: 9999!important;
+  /* mix-blend-mode: lighten; */
+}
+
+.welcome-text h1{
+  margin-bottom: 15px;
+  mix-blend-mode: difference;
+}
+
+/* components */
+
+footer{
+  position: absolute;
+  bottom:0;
+  left: 0;
+  width:100%;
+  height: 55px;
+  background-color:#199E05;
+  text-align: center;
+  line-height: 55px;
+  color:white;
+}
